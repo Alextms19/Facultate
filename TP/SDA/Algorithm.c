@@ -12,7 +12,7 @@ int main(){
     {
         arr[i]=rand();
     }
-    printf("\n1 Selection\n2 Bubble\n3 insertion \n4 quicksort\n5 cocktail\n ");
+    printf("\n1 Selection\n2 Bubble\n3 insertion \n4 My quicksort\n5 cocktail\n6 Geek quicksort ");
     scanf("%d", &op);
     switch(op){
         case 1:
@@ -35,6 +35,10 @@ int main(){
         cocktail(arr,n);
         show(arr,n);
         break;
+        case 6:
+            quicksort(arr,0, n-1);
+            show(arr, n);
+            break;
         case 0:
         exit(0);
         break;
